@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Welcome to my simple calculator page!</h2>
+
+<p id="numbers"></p>
+<p id="result"></p>
+
+<script>
+// Step 1: Get two numbers using prompt
+let num1 = Number(prompt("Enter the first number:"));
+let num2 = Number(prompt("Enter the second number:"));
+
+// Step 2: Perform operations
+let sum = num1 + num2; // Addition
+let difference = num1 - num2; // Subtraction
+let product = num1 * num2; // Multiplication
+let quotient = num1 / num2; // Division
+let remainder = num1 % num2; // Modulus
+
+// Step 3: Display results using document.write()
+document.write("Numbers: " + num1 + " and " + num2 + "<br><br>");
+document.write("Sum: " + sum + "<br>");
+document.write("Difference: " + difference + "<br>");
+document.write("Product: " + product + "<br>");
+document.write("Quotient: " + quotient + "<br>");
+document.write("Remainder: " + remainder + "<br><br>");
+
+// Step 4: Display results using innerHTML
+document.getElementById("numbers").innerHTML =
+"Numbers: " + num1 + " and " + num2;
+
+document.getElementById("result").innerHTML =
+"Sum: " + sum + "<br>" +
+"Difference: " + difference + "<br>" +
+"Product: " + product + "<br>" +
+"Quotient: " + quotient + "<br>" +
+"Remainder: " + remainder;
+</script>
+
+</body>
+</html>
